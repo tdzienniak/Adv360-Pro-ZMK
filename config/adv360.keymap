@@ -43,16 +43,25 @@
         combo_l_lalt {
             bindings = <&kp LALT>;
             key-positions = <65 30>;
+            slow-release;
         };
 
         combo_l_lshift {
             bindings = <&kp LSHIFT>;
             key-positions = <65 31>;
+            slow-release;
         };
 
         combo_l_lctrl {
             bindings = <&kp LCTRL>;
             key-positions = <65 32>;
+            slow-release;
+        };
+
+        combo_l_lctrl_lshift {
+            bindings = <&kp LC(LSHIFT)>;
+            key-positions = <65 32 31>;
+            slow-release;
         };
     };
 
