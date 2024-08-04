@@ -138,11 +138,11 @@
 
         symbol {
             bindings = <
-&kp  &kp            &kp        &kp          &kp            &kp            &kp                          &kp             &kp        &kp                &kp                   &kp                    &kp               &kp
-&kp  &kp HASH       &kp EXCL   &kp PERCENT  &kp COLON      &kp AMPERSAND  &kp                          &kp             &kp PIPE   &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &kp
-&kp  &kp QUESTION   &kp MINUS  &kp PLUS     &kp SEMICOLON  &kp COMMA      &kp  &kp  &kp      &kp  &kp  &none           &kp DOT    &kp CARET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp
-&kp  &kp BACKSLASH  &kp SLASH  &kp STAR     &kp EQUAL      &kp GRAVE                &kp      &kp                       &kp TILDE  &kp LESS_THAN      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &kp
-&kp  &kp            &kp        &kp          &kp AT_SIGN                   &kp  &kp  &kp      &kp  &kp  &kp UNDERSCORE             &kp                &kp                   &kp                    &kp               &kp
+&none  &none          &none      &none        &none          &none          &none                                  &none           &none      &none              &none                 &none                  &none             &none
+&none  &kp HASH       &kp EXCL   &kp PERCENT  &kp COLON      &kp AMPERSAND  &none                                  &none           &kp PIPE   &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SINGLE_QUOTE  &none
+&none  &kp QUESTION   &kp MINUS  &kp PLUS     &kp SEMICOLON  &kp COMMA      &none  &none  &none      &none  &none  &none           &kp DOT    &kp CARET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &none
+&none  &kp BACKSLASH  &kp SLASH  &kp STAR     &kp EQUAL      &kp GRAVE                    &none      &none                         &kp TILDE  &kp LESS_THAN      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GREATER_THAN  &none
+&none  &none          &none      &none        &kp AT_SIGN                   &none  &none  &none      &none  &none  &kp UNDERSCORE             &none              &none                 &none                  &none             &none
             >;
         };
     };
