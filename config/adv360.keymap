@@ -116,11 +116,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL       &kp N1       &kp N2       &kp N3        &kp N4        &kp N5  &tog 2                                                              &mo 3      &kp N6  &kp N7        &kp N8        &kp N9       &kp N0               &kp MINUS
-&kp TAB         &kp Q        &kp W        &kp E         &kp R         &kp T   &kp DEL                                                             &none      &kp Y   &kp U         &kp I         &kp O        &kp P                &kp BSLH
-&kp ESC         &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G   &kp BSPC  &mo 5          &kp LALT      &kp PRINTSCREEN  &kp DELETE  &none      &kp H   &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI SEMICOLON  &kp SQT
-&kp LEFT_SHIFT  &kp Z        &kp X        &kp C         &kp V         &kp B                            &kp HOME      &kp PG_UP                               &kp N   &kp M         &comma_quest  &dot_excl    &kp MINUS            &kp RSHFT
-&mo 1           &kp RALT     &kp CAPS     &kp LEFT      &kp RIGHT             &mo 4     &kp BACKSPACE  &kp END       &kp PG_DN        &kp ENTER   &kp SPACE          &kp DOWN      &kp UP        &kp LBKT     &kp RALT             &mo 1
+&kp EQUAL  &kp N1       &kp N2       &kp N3        &kp N4        &kp N5  &tog 2                                                                  &mo 3      &kp N6  &kp N7        &kp N8        &kp N9       &kp N0               &kp MINUS
+&kp TAB    &kp Q        &kp W        &kp E         &kp R         &kp T   &kp DEL                                                                 &none      &kp Y   &kp U         &kp I         &kp O        &kp P                &kp BSLH
+&kp ESC    &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G   &kp BSPC  &mo 5           &kp LALT      &kp PRINTSCREEN  &kp DELETE     &none      &kp H   &hmr RSHFT J  &hmr RCTRL K  &hmr LALT L  &hmr RGUI SEMICOLON  &kp CAPSLOCK
+&kp TAB    &kp Z        &kp X        &kp C         &kp V         &kp B                             &kp HOME      &kp PG_UP                                  &kp N   &kp M         &comma_quest  &dot_excl    &kp MINUS            &kp ENTER
+&mo 1      &mo 5        &kp RALT     &kp LEFT      &kp RIGHT             &mo 4     &kp LEFT_SHIFT  &kp END       &kp PG_DN        &kp BACKSPACE  &kp SPACE          &kp DOWN      &kp UP        &kp RALT     &kp RALT             &mo 1
             >;
         };
 
