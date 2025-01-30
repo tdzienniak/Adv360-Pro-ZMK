@@ -106,7 +106,7 @@
         polish_n: polish_n {
             compatible = "zmk,behavior-mod-morph";
             label = "POLISH_N";
-            bindings = <&kp D>, <&kp RA(N)>;
+            bindings = <&kp F>, <&kp RA(N)>;
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
