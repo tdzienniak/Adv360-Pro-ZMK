@@ -75,6 +75,42 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        polish_e: polish_e {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POLISH_E";
+            bindings = <&kp T>, <&kp RA(E)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        polish_l: polish_l {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POLISH_L";
+            bindings = <&kp R>, <&kp RA(L)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        polish_o: polish_o {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POLISH_O";
+            bindings = <&kp D>, <&kp RA(O)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
+
+        polish_n: polish_n {
+            compatible = "zmk,behavior-mod-morph";
+            label = "POLISH_N";
+            bindings = <&kp D>, <&kp RA(N)>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RALT)>;
+        };
     };
 
     combos {
@@ -126,11 +162,11 @@
 
         colemak_dh {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                                      &trans  &kp J   &kp L   &kp U   &kp Y   &none   &trans
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E   &kp I   &kp O   &trans
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V                   &trans      &trans                  &kp K   &kp H   &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W      &polish_n  &kp P      &kp B   &trans                                      &trans  &kp J   &kp L   &kp U   &kp Y   &none   &trans
+&trans  &kp A   &polish_l  &kp S      &polish_e  &kp G   &trans  &trans  &trans      &trans  &trans  &trans  &kp M   &kp N   &kp E   &kp I   &kp O   &trans
+&trans  &kp Z   &kp X      &kp C      &polish_o  &kp V                   &trans      &trans                  &kp K   &kp H   &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -167,7 +203,7 @@
         navigation {
             bindings = <
 &trans  &kp N1  &kp N2    &kp N3     &kp N4   &kp N5  &trans                                      &trans  &kp N6  &kp N7    &kp N8    &kp N9     &kp N0    &trans
-&trans  &trans  &trans    &kp PG_UP  &trans   &trans  &trans                                      &trans  &trans  &trans    &kp UP    &trans     &trans    &trans
+&trans  &none   &none     &kp PG_UP  &none    &none   &trans                                      &trans  &trans  &none     &kp UP    &none      &none     &trans
 &trans  &kp N1  &kp HOME  &kp PG_DN  &kp END  &kp N5  &trans  &trans  &trans      &trans  &trans  &trans  &kp N6  &kp LEFT  &kp DOWN  &kp RIGHT  &kp N0    &trans
 &trans  &none   &kp N2    &kp N3     &kp N4   &none                   &trans      &trans                  &none   &kp N7    &kp N8    &kp N9     &kp BSPC  &trans
 &trans  &trans  &trans    &trans     &trans           &trans  &trans  &trans      &trans  &trans  &trans          &trans    &trans    &trans     &trans    &trans
